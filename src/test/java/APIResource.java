@@ -18,13 +18,10 @@ public enum APIResource {
 		System.out.println("Hello sunny");
 	}
 	
-	public void sunny1()
+	public void sunny4()
 	{
-		System.out.println("Hello sunny1");
+		System.out.println("Hello sunny4");
 	}
 	
-	public void sunny2()
-	{
-		System.out.println("Hello sunny2");
-	}
+	
 }
