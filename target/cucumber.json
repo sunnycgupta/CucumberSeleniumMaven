@@ -1,0 +1,386 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-19T17:42:53.511Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefination.Hooks.intializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Sample login in to application",
+        "description": "",
+        "id": "title-of-your-feature;sample-login-in-to-application",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefination.Hooks.tearDownTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11354000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I navigate to the application \"firefox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firefox",
+                  "offset": 31
+                }
+              ],
+              "location": "stepsDefination.LoginSteps.i_navigate_to_the_application_something(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 11000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1185000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I login with username and password",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_login_with_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "sunny123"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Pass12345$"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5314000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 13000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "I click on login button",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_click_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2236000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "I log out in the application",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_log_out_in_the_application()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T17:43:13.733Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefination.Hooks.intializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Sample login in to application",
+        "description": "",
+        "id": "title-of-your-feature;sample-login-in-to-application",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepsDefination.Hooks.tearDownTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7133000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "I navigate to the application \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 31
+                }
+              ],
+              "location": "stepsDefination.LoginSteps.i_navigate_to_the_application_something(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 3000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1320000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "I login with username and password",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_login_with_username_and_password(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "sunny123"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "Pass12345$"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5171000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "I click on login button",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_click_on_login_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1199000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.beforeTestStep()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "I log out in the application",
+            "match": {
+              "location": "stepsDefination.LoginSteps.i_log_out_in_the_application()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 5000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepsDefination.Hooks.afterTestStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  }
+]
