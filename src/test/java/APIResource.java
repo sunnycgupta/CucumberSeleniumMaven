@@ -12,4 +12,9 @@ public enum APIResource {
 	public String getResource() {
 		return resource;
 	}
+	
+	public void sunny()
+	{
+		System.out.println("Hello sunny");
+	}
 }
