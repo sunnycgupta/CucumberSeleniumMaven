@@ -20,6 +20,11 @@ public enum APIResource {
 	
 	public void sunny1()
 	{
+		System.out.println("Hello sunny1");
+	}
+	
+	public void sunny2()
+	{
 		System.out.println("Hello sunny2");
 	}
 }
