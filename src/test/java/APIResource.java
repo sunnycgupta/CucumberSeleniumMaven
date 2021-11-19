@@ -23,5 +23,9 @@ public enum APIResource {
 		System.out.println("Hello sunny4");
 	}
 	
-	
+	public void sunny3()
+	{
+		System.out.println("Hello sunny3");
+	}
+
 }
