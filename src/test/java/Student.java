@@ -1,18 +1,45 @@
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 
-public class Student {
+public class Student implements ITestListener {
+	
+  
+	public void onTestStart(ITestResult result) {
+	    System.out.println("Test case name is "+ result.getName());
+	}
+	
+	 public void onTestSuccess(ITestResult result) {
+		  System.out.println("Test case name is "+ result.getName());
+		  }
 
-   int a=100;
+		  /**
+		   * Invoked each time a test fails.
+		   *
+		   * @param result <code>ITestResult</code> containing information about the run test
+		   * @see ITestResult#FAILURE
+		   */
+		  public void onTestFailure(ITestResult result) {
+			  System.out.println("Test case name is "+ result.getName());
+		  }
 
-   boolean b() {
-      a=200;
-      return true;
-   }
-	public static void main(String[] args)
-   {
-      Student s=new Student();
-      System.out.println(s.a);
-      System.out.println(s.b());
-      System.out.println(s.a);
-      System.out.println(s instanceof Student);
-   }
+		  /**
+		   * Invoked each time a test is skipped.
+		   *
+		   * @param result <code>ITestResult</code> containing information about the run test
+		   * @see ITestResult#SKIP
+		   */
+		  public void onTestSkipped(ITestResult result) {
+			  System.out.println("Test case name is "+ result.getName());
+		  }
+
+		  /**
+		   * Invoked each time a method fails but has been annotated with successPercentage and this failure
+		   * still keeps it within the success percentage requested.
+		   *
+		   * @param result <code>ITestResult</code> containing information about the run test
+		   * @see ITestResult#SUCCESS_PERCENTAGE_FAILURE
+		   */
+		  
+	
+	
 }

@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runners.LoginTestFirefoxTestNg">
+      <class name="Tester">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="setChromeOptionsMethodToRemovePopups"/>
         </methods>
-      </class> <!-- runners.LoginTestFirefoxTestNg -->
+      </class> <!-- Tester -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

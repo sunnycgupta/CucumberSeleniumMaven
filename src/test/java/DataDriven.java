@@ -1,6 +1,6 @@
+import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -59,6 +59,19 @@ public class DataDriven {
 		workbook.close();
 		fis.close();
 		return al;
+	}
+	
+	public void createData() throws Exception {
+		
+		FileInputStream fis=new FileInputStream("C://Users//sunny.gupta//eclipse-workspace//CucumberSeleniumMaven//datademo.xlsx");
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		XSSFSheet sheet=workbook.getSheetAt(0);
+		sheet.getRow(0).createCell(0).setCellValue("Sunny");
+		FileOutputStream fout=new FileOutputStream(new File("C://Users//sunny.gupta//eclipse-workspace//CucumberSeleniumMaven//datademo.xlsx"));
+		workbook.write(fout);
+		workbook.close();
+		
+		
 	}
 	
 }

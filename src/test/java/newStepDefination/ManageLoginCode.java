@@ -14,7 +14,7 @@ public class ManageLoginCode
    @Given("^I login into orange hr service$")
    public void i_login_into_orange_hr_service() throws Throwable {
 
-      System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\UpdatedDrivers\\chromedriver.exe");
+      System.setProperty("webdriver.chrome.driver", "C:\\Sunny\\chromedriver\\chromedriver.exe");
       driver=new ChromeDriver();
       driver.manage().window().maximize();
       driver.get("https://opensource-demo.orangehrmlive.com/index.php/dashboard");

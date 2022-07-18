@@ -1,27 +1,68 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.xml.crypto.AlgorithmMethod;
+
+
 
 public class Calculation
 {
-
+	//fibonacci with recursion 
+//	 static int n1=0,n2=1,n3=0;
+//	 static void printFibonacci(int count)
+//	 {
+//		 if(count>0) {
+//		n3=n1+n2;
+//		 System.out.println(n3);
+//		 n1=n2;
+//		 n2=n3;
+//		 printFibonacci(count-1);
+//		 }
+//	 }
    public static void main(String[] args)
    {
-      int a = 10;
-      int b = 5;
-      int c=0;
-//     System.out.println(a++ + ++a);
-//     System.out.println(b++ + b++);
-//      boolean c = true;
-//      boolean d = false;
-//      System.out.println("The value of negation " + !c);
-//      System.out.println("The value of negation " + !d);
-//
-//      System.out.println("adding two numbers "+ (a+b));
-//      System.out.println("subtracting two numbers "+ (a-b));
-//      System.out.println("multiplication two numbers "+ (a*b));
-//      System.out.println("divider two numbers "+ (a/b));
-//      System.out.println("modulus two number "+ (a%b));
-
-    int min= a<b?a:b;
-    System.out.println(min);
+      //string manipulation with upper lower case
+//	String str="this is sunny gupta";
+//	String words[]=str.split("\\s");
+//	String capital="";
+//	for(String word:words) {
+//		String firstWord=word.substring(0,1);
+//		String remainingWords=word.substring(1);
+//		capital=capital+ firstWord.toUpperCase()+remainingWords.toLowerCase()+" ";
+//	}
+//	System.out.println(capital.trim());
+//	
+	//facctttorail of number
+//	int fact =1;
+//	int number=5;
+//	for(int i=1;i<=number;i++) {
+//		fact=fact*i;
+//	}
+//	System.out.println(fact);  
+	   
+	   // printing fibonacii series
+//	   int n1=0,n2=1,n3,count=10;
+//	   System.out.println("The first two numbers are " + n1+ "-- "+n2);
+//	   for(int i=2;i<count;i++) {
+//		   n3=n1+n2;
+//		   System.out.println(n3);
+//		   n1=n2;
+//		   n2=n3;
+//		   
+//	   }
+	 //fibonacci with recursion 
+//	   int count=10;
+//	   System.out.println("first two values" + n1+ " "+n2);
+//	   printFibonacci(count-2);
+	   
+	  // prime number in java
+	   
+	   int n=5;
+	   int m=n/2;
+	   System.out.println(m);
+	   
+	   
+	   
    }
 
 }
