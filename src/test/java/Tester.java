@@ -34,7 +34,7 @@ import io.restassured.response.Response;
 @Listeners(Student.class)
 public class Tester {
 
-	@Test
+
    public static void mainWebProgram() throws ParseException
    {
 
@@ -131,7 +131,7 @@ public class Tester {
 	      driver.close();
 	      }
 	
-	
+	@Test
 	public static void mainUsingWebDriverManagerFirefoxProgram() throws ParseException
 	   {
 
@@ -144,7 +144,7 @@ public class Tester {
 	      driver.findElement(By.id("btnLogin")).click();
 	      driver.close();
 	      }
-	@Test
+
 	public void setChromeOptionsMethodToRemovePopups() throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
