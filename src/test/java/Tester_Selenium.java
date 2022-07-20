@@ -32,7 +32,7 @@ import io.restassured.response.Response;
 
 
 @Listeners(Student.class)
-public class Tester {
+public class Tester_Selenium {
 
 
    public static void mainWebProgram() throws ParseException
