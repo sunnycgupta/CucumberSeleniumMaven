@@ -1,11 +1,12 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+package com.java.programs;
+import java.awt.image.BufferedImage;
+import java.awt.image.renderable.RenderableImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-import javax.swing.plaf.synth.SynthSpinnerUI;
-import javax.xml.crypto.AlgorithmMethod;
-
-import org.apache.poi.util.SystemOutLogger;
+import javax.imageio.ImageIO;
 
 
 
@@ -23,8 +24,28 @@ public class Java_Programs_Practice
 //		 printFibonacci(count-1);
 //		 }
 //	 }
+	//program to print power
+//	static int power(int x,int y)
+//	{
+//		if(y==0) {
+//			return 1;
+//		}
+//		else if(y%2==0)
+//		{
+//			return power(x,y/2)*power(x,y/2);
+//		}
+//		else
+//		{
+//			return x* power(x,y/2)*power(x,y/2);
+//		}
+//	}
    public static void main(String[] args)
    {
+	   //program to print power
+//	   int x=3,y=4;
+//	   System.out.println(power(3,4));
+	   
+	   
 	   // count number of chatracters in string
 //	   String str="Hello sunny gupta";
 //	   int count=0;
@@ -168,42 +189,160 @@ public class Java_Programs_Practice
 //	   }
 	   
 	   
-	   //print pascal traiangele
-	   //int n=6;
-	   
-//	   {
-//	        for (int i = 1; line <= n; i++) {
-//	            for (int j = 0; j <= n - i; j++) {
-//	 
-//	                // for left spacing
-//	                System.out.print(" ");
-//	            }
-//	 
-//	            // used to represent C(line, i)
-//	            int C = 1;
-//	            for (int k = 1; k <= k; k++) {
-//	 
-//	                // The first value in a line is always 1
-//	                System.out.print(C + " ");
-//	                C = C * (i - k) / k;
-//	            }
-//	            System.out.println();
-//	        }
+	  
 	   
 	   
 	   
 	   // reverse each word inside a string
-	   String str="This is a quick String";
-	   String reverseStr="";
-	   String words[]=str.split(" ");
-	   for(String word:words) {
-		   String reverseWord="";
-		   for(int i=word.length()-1;i>=0;i--) {
-			   reverseWord=reverseWord+word.charAt(i);
-			   }
-		   reverseStr=reverseStr+reverseWord+" ";
-	   }
-	   System.out.println(reverseStr.trim());
+//	   String str="This is a quick String";
+//	   String reverseStr="";
+//	   String words[]=str.split(" ");
+//	   for(String word:words) {
+//		   String reverseWord="";
+//		   for(int i=word.length()-1;i>=0;i--) {
+//			   reverseWord=reverseWord+word.charAt(i);
+//			   }
+//		   reverseStr=reverseStr+reverseWord+" ";
+//	   }
+//	   System.out.println(reverseStr.trim());
+	   
+	//programatically check if array is null , empty or has null values
+	   
+//	   int arr[]=null;
+//		if(arr==null) {
+//			System.out.println("Array is null");
+//		}
+//		 int arr1[]=new int[0];
+//		 if(arr1.length==0) {
+//			 System.out.println("Array is empty");
+//		 }
+//	
+//		 Integer arr2[]= {1,4,2};
+//		 boolean flag=true;
+//		 for(int i=0;i<arr2.length;i++)
+//		 {
+//			 if(arr2[i]!=null)
+//			 {
+//				flag=false; 
+//			 }
+//		 }
+//		 if(flag) {
+//			 System.out.println("Values are null");
+//		 }
+//			ArrayUtils.isNotEmpty(arr)	; 
+	   
+	 
+	   //program to print unique elements in array
+//	   int arr[]= {1,1,2,2,2,3,3,3,4,4,4,4,5,5};
+//	   int n=arr.length;
+//	   int temp[]=new int[n];
+//	   
+//	   int j=0;
+//	   for(int i=0;i<n-1;i++) {
+//		   if(arr[i]!=arr[i+1]) {
+//			   temp[j++]=arr[i];
+//		   }
+//		   	   
+//	   }
+//	   temp[j++]=arr[n-1];
+//	   
+//	   for(int k=0;k<j;k++) {
+//		   System.out.println(temp[k]);
+//		
+//	   }
+//	  
+//   }
+	   //insertion sort uses while loop 
+//	   public static void insertionSort(int array[]) {  
+//	        int n = array.length;  
+//	        for (int j = 1; j < n; j++) {  
+//	            int key = array[j];  
+//	            int i = j-1;  
+//	                array [i+1] = array [i];  
+//	                i--;  
+//	            }  
+//	            array[i+1] = key;  
+//	        }  
+//	    }  
+	   
+	   
+	   // sorting strings of array using selection sort
+	   
+//	   String arr[]= {"GeeksforGeeks","Practice.Geeks","GeksQuiz"};
+//	   int n =arr.length;
+//	   
+//	   for(int i=0;i<n-1;i++) {
+//		   
+//		   int min_index=i;
+//		   String min_string=arr[i];
+//		   
+//		   for(int j=i+1;j<n;j++) {
+//			   if(arr[j].compareTo(min_string)<0) {
+//				   min_index=j;
+//				   min_string=arr[j];
+//			   }
+//		   }
+//		   
+//		   if(min_index!=i) {
+//			   String temp=arr[min_index];
+//			   arr[min_index]=arr[i];
+//			   arr[i]=temp;
+//			   
+//		   }
+//	   }
+//	   
+//	   for(String str:arr) {
+//		   System.out.println(str);
+//	   }
+	   
+	   // merge to arrays in to a single array
+	   
+//	   int arr1[]= {1,2,3,4};
+//	   int arr2[]= {5,6,7,8};
+//	   HashMap<Integer,Boolean> hm=new HashMap<Integer,Boolean>();
+//	   for(int i=0;i<arr1.length;i++) {
+//		   hm.put(arr1[i], true);
+//	   }
+//	   
+//	   for(int j=0;j<arr1.length;j++) {
+//		   hm.put(arr2[j], true);
+//	   }
+//	   
+//	   Set<Integer> str=hm.keySet();
+//	   
+//	   int n=str.size();
+//	   int arr3[]=new int[n];
+//	   int k=0;
+//	   for(Integer it:str) {
+//		   arr3[k++]=it;
+//	   }
+//	   
+//	   for(int a:arr3) {
+//		   System.out.println(a);
+//	   }
+//	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
 	   
 	   
 	   
@@ -401,24 +540,147 @@ public class Java_Programs_Practice
 //		   System.out.println(arr[i]);
 //	   }
 	   
-	   //transpose of a matrix
+	  // print 1 to 100 without using for loop
+//	   BitSet bs=new BitSet();
+//	   bs.set(1, 101);
+//	   System.out.println(bs);
+	   
+	   // print hello world without using ;
+//	   if(System.out.printf("Hello world")==null) {
+//		}
+//	   
+	   
+	
+	 //How-do-I-print-the-following-pattern-in-Java-
+//	   55555
+//	   54444
+//	   54333
+//	   54322
+//	   54321
+//	 for(int i=5;i>0;i--)
+//	 {
+//		 for(int j=5;j>i;j--) {
+//			 System.out.print(j);
+//		 }
+//		 for(int k=i;k>0;k--)
+//		 {
+//			 System.out.print(i);
+//		 }
+//		 System.out.println();
+//	 }
+	   // simple * pattern
+//	   int rows =5;
+//	   
+//	   for(int i=0;i<rows ;i++) {
+//		   // for reverse * pattern use j<=rows-i 
+//		   for(int j=0;j<=i;j++) {     
+//			   System.out.print("*" +" ");
+//		   }
+//		   System.out.println();
+//	   }
+	   
+	   //print pascal traiangele
+//	   int n=6;
+//	   
+//	   {
+//	        for (int i = 1; i <= n; i++) {  
+//	            for (int j = 0; j <= n - i; j++) {
+//	 
+//	                // for left spacing
+//	                System.out.print(" ");
+//	            }
+//	 
+//	            // used to represent C(line, i)
+//	            int C = 1;
+//	            for (int k = 1; k <= i; k++) {
+//	 
+//	                // The first value in a line is always 1
+//	                System.out.print(C + " ");
+//	                C = C * (i - k) / k;
+//	            }
+//	            System.out.println();
+//	        }
+//	   }
+	   
+	   // left side print
+//	   int rows=6;
+//	   for(int i=0;i<rows;i++)
+//	   {
+//		   for(int j=2*(rows-i);j>1;j--)
+//		   {
+//			   System.out.print(" ");
+//		   }
+//	   for(int k=0;k<=i;k++) {
+//		   System.out.print("*" +" ");
+//	   }
+//	   System.out.println();
+//   }
+	   
+	   //pattern to print * triangle
+//	   int rows=6;
+//	   for(int i=0;i<rows;i++)
+//	   {
+//		   for(int j=(rows-i);j>1;j--)
+//		   {
+//			   System.out.print(" ");
+//		   }
+//	   for(int k=0;k<=i;k++) {
+//		   System.out.print("*" +" ");
+//	   }
+//	   System.out.println();
+//   }
+	   
+//	   int rows=8;
+//	   for(int i=0;i<rows;i++) {
+//		   
+//		   for(int j=0;j<i;j++)
+//		   {
+//			   System.out.print(" ");
+//		   }
+//		   
+//		   for(int k=0;k<rows-i;k++) {
+//			   System.out.print("*" +" ");
+//		   }
+//		   System.out.println();
+//	   }
+//	   
+//	   
+	   
+	   // check substring is present in string  like   sunny is present in sunny gupta
+//	   String str="sunny gupta";
+//	   String substr="sunny";
+//	   boolean b1=str.matches("(.*)"+substr+"(.*)");
+//	      
+//	   boolean b2=str.contains(substr);
+//	   
+//	   boolean b3= str.indexOf(substr)!=1;
+//	   
+//	   System.out.println(b1);
+//	   System.out.println(b2);
+//	   System.out.println(b3);
 	   
 	   
+	   // convert image from jpg to png ext 
+//	   https://m.media-amazon.com/images/I/71H-Lk2b3mL._AC_SX679_.jpg
 	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
-	   
+	   try {
+		URL url=new URL("https://m.media-amazon.com/images/I/71H-Lk2b3mL._AC_SX679_.jpg");
+		
+		BufferedImage image=ImageIO.read(url);
+	
+		ImageIO.write(image, "jpg", new File("./images/sunny.jpg"));
+		ImageIO.write(image, "png",  new File("./images/sunny.png"));
+		ImageIO.write(image, "jpg", new File("./images/sunny.bmp"));
+		
+		//ImageIO.write(image, "jpg", "./images/sunny.png");
+		
+	} catch (MalformedURLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	   
 	   
 	   
@@ -433,5 +695,5 @@ public class Java_Programs_Practice
 	   
 	   
    }
-
 }
+

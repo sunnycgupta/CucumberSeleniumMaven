@@ -1,3 +1,4 @@
+package com.java.programs;
 
 public enum APIResource {
 

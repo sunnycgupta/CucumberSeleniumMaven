@@ -1,3 +1,4 @@
+package com.java.programs;
 
 public  class AutoTest implements Comparable<AutoTest>
 {
