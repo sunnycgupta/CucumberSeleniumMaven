@@ -36,8 +36,7 @@ public class CheckLoginFeature {
 	   
 	    @When("I log in with {string} and  {string}")
 	    public void i_log_in_with_and(String string1, String string2) {
-	       System.out.println("This scenario will run twice");
-	       System.out.println("Username is "+ string1);
+	        System.out.println("Username is "+ string1);
 	       System.out.println("Password is "+ string2);
 	       
 	    }

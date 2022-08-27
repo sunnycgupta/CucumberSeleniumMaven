@@ -29,12 +29,12 @@ public class Hooks extends BaseUtils{
 	public void tearDownTest(Scenario scenario) {
 		System.out.println("End of the scenario "+ scenario.getName());
 	}
-	@BeforeStep
-	public void beforeTestStep() {
-		System.out.println("Executing before test step");
-	}
-	@AfterStep
-	public void afterTestStep() {
-		System.out.println("Executing after test step");
-	}
+//	@BeforeStep
+//	public void beforeTestStep() {
+//		System.out.println("Executing before test step");
+//	}
+//	@AfterStep
+//	public void afterTestStep() {
+//		System.out.println("Executing after test step");
+//	}
 }
