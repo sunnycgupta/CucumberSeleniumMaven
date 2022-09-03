@@ -3,11 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Updated upstream
       <class name="com.java.programs.RestApiPractice">
         <methods>
           <include name="getResponse"/>
         </methods>
       </class> <!-- com.java.programs.RestApiPractice -->
+=======
+      <class name="com.java.programs.CreatingApiRestCode">
+        <methods>
+          <include name="getData"/>
+        </methods>
+      </class> <!-- com.java.programs.CreatingApiRestCode -->
+>>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
